@@ -5,19 +5,19 @@ import { delay } from "./utils";
 
 async function main() {
   const faultyArray = [
-    true,
-    true,
-    true,
-    true,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-  ];
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+      ];
 
-  const initialValues: Value[] = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+      const initialValues: Value[] = [0, 0, 1, 1, 1, 0, 0, 1, 1, 0];
 
   if (initialValues.length !== faultyArray.length)
     throw new Error("Lengths don't match");
